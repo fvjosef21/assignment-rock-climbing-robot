@@ -3,6 +3,7 @@ import climb1 from '../../public/wall-climbing-1.png';
 import bear1 from '../../public/taiwan-bear-1.png';
 import holds1 from '../../public/climbing-holds-1.png';
 import styles from "./page.module.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -143,6 +144,12 @@ export default function Home() {
           Thirdly, implement a planning algorithm that will make the robot climb up walls.
         </p>
 
+        <h1>Analysis</h1>
+
+        <p>
+
+        </p>
+
         <h1>Groups</h1>
 
         <p>
@@ -170,12 +177,33 @@ export default function Home() {
         </p>
 
         <p>
-          Fill out the NTNU Honesty Declaration and add any external sources or 
-          help that you used during the assignment.
+          Fill out the <Link href="/honesty.txt" passHref><a>NTNU Honesty Declaration</a></Link> and 
+          add any external sources or help that you used during the assignment.
         </p>
         
         <h1>Submission</h1>
+        <p>
+          All your files and analysis should go into a directory labelled G_%group_num%_CMP_A2, 
+          where %group_num% is your group number.
+        </p>
 
+        <p>
+          Add a README.txt file into the directory, which shows: (a) what other sources you used 
+          apart from the lecture material used in class during your work on the assignment, and 
+          (b) how to compile and run your program, and (c) any interesting features and extensions 
+          of your assignment.
+        </p>
+
+        <p>
+          Submit your assignment via email to jacky.baltes@ntnu.edu.tw. You can submit a 
+          compressed directory of your source code and analysis directly if the resulting file 
+          is less than 2 Megabyte. If the file is larger than create a google drive folder and 
+          send me a sharable link to the folder to my email. 
+        </p>
+
+        <p>
+          Your group will give a demonstration of your work during the third week of June.
+        </p>
 
         {/* <div className={styles.ctas}>
           <a
