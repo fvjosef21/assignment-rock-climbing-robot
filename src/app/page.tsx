@@ -13,7 +13,7 @@ export default function Home() {
               <td style={{ padding: 10 }}>
                 <Image
                   className={styles.logo}
-                  src="${basePath}/wall-climbing-1.png"
+                  src={`${basePath}/wall-climbing-1.png`}
                   alt="Climbing wall logo"
                   width="512"
                   height="512"
@@ -60,7 +60,7 @@ export default function Home() {
 
         <div>
           <Image
-            src="${basePath}/climbing-holds-1.png"
+            src={`${basePath}/climbing-holds-1.png`}
             alt="climbing holds used in the simulation"
             layout="intrinsic"
             width="512"
