@@ -1,7 +1,8 @@
 import Image from "next/image";
+import climb1 from '../../public/wall-climbing-1.png';
+import bear1 from '../../public/taiwan-bear-1.png';
+import holds1 from '../../public/climbing-holds-1.png';
 import styles from "./page.module.css";
-
-import { basePath } from '../next.config.ts';
 
 export default function Home() {
   return (
@@ -12,8 +13,7 @@ export default function Home() {
             <tr>
               <td style={{ padding: 10 }}>
                 <Image
-                  className={styles.logo}
-                  src={`${basePath}/wall-climbing-1.png`}
+                  src={climb1}
                   alt="Climbing wall logo"
                   width="512"
                   height="512"
@@ -60,7 +60,7 @@ export default function Home() {
 
         <div>
           <Image
-            src={`${basePath}/climbing-holds-1.png`}
+            src={holds1}
             alt="climbing holds used in the simulation"
             layout="intrinsic"
             width="512"
@@ -87,7 +87,7 @@ export default function Home() {
 
         <p>The model of the robot is available in the following github repository: <a href="https://github.com/lgadiego001/rock-climbing-robot.git">lgadiego001/rock-climbing-robot</a></p>
         <Image
-          src="/taiwan-bear-1.png"
+          src={bear1}
           alt="Taiwan bear model"
           layout="intrinsic"
           width={512}
